@@ -17,11 +17,11 @@ namespace Greenhouse
         public main_form()
         {
             InitializeComponent();
-            panel1.Location = new Point(0, 0);
-            panel2.Visible = false;
-            panel3.Visible = false;
-            panel2.Location = new Point(0, 0);
-            panel3.Location = new Point(0, 0);
+            startPanel.Location = new Point(0, 0);
+            adminPanel.Visible = false;
+            ghWorkerPanel.Visible = false;
+            adminPanel.Location = new Point(0, 0);
+            ghWorkerPanel.Location = new Point(0, 0);
         }
 
         private void button1_MouseEnter(object sender, EventArgs e)
@@ -93,8 +93,8 @@ namespace Greenhouse
 
             if (textBox1.Text == "v" && textBox2.Text == "1")
             {
-                panel1.Visible = false;
-                panel3.Visible = true;
+                startPanel.Visible = false;
+                ghWorkerPanel.Visible = true;
             }
             else
             {

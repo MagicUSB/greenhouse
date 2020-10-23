@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.startPanel = new System.Windows.Forms.Panel();
+            this.adminPanel = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -40,49 +40,49 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.ghWorkerPanel = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.startPanel.SuspendLayout();
+            this.adminPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel3.SuspendLayout();
+            this.ghWorkerPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // startPanel
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.startPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.GreenYellow;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(120, 127);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(882, 757);
-            this.panel1.TabIndex = 0;
+            this.startPanel.BackColor = System.Drawing.Color.GreenYellow;
+            this.startPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.startPanel.Controls.Add(this.button1);
+            this.startPanel.Controls.Add(this.pictureBox1);
+            this.startPanel.Controls.Add(this.pictureBox2);
+            this.startPanel.Controls.Add(this.label4);
+            this.startPanel.Controls.Add(this.label3);
+            this.startPanel.Controls.Add(this.label2);
+            this.startPanel.Controls.Add(this.textBox2);
+            this.startPanel.Controls.Add(this.textBox1);
+            this.startPanel.Controls.Add(this.label1);
+            this.startPanel.Location = new System.Drawing.Point(120, 127);
+            this.startPanel.Name = "startPanel";
+            this.startPanel.Size = new System.Drawing.Size(882, 757);
+            this.startPanel.TabIndex = 0;
             // 
-            // panel2
+            // adminPanel
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.adminPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.Color.GreenYellow;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Location = new System.Drawing.Point(82, 99);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(882, 757);
-            this.panel2.TabIndex = 9;
+            this.adminPanel.BackColor = System.Drawing.Color.GreenYellow;
+            this.adminPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.adminPanel.Controls.Add(this.label5);
+            this.adminPanel.Location = new System.Drawing.Point(82, 99);
+            this.adminPanel.Name = "adminPanel";
+            this.adminPanel.Size = new System.Drawing.Size(882, 757);
+            this.adminPanel.TabIndex = 9;
             // 
             // label5
             // 
@@ -200,19 +200,19 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Вхід";
             // 
-            // panel3
+            // ghWorkerPanel
             // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.ghWorkerPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.BackColor = System.Drawing.Color.GreenYellow;
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel3.Controls.Add(this.label7);
-            this.panel3.Controls.Add(this.label6);
-            this.panel3.Location = new System.Drawing.Point(37, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(882, 757);
-            this.panel3.TabIndex = 10;
+            this.ghWorkerPanel.BackColor = System.Drawing.Color.GreenYellow;
+            this.ghWorkerPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ghWorkerPanel.Controls.Add(this.label7);
+            this.ghWorkerPanel.Controls.Add(this.label6);
+            this.ghWorkerPanel.Location = new System.Drawing.Point(37, 0);
+            this.ghWorkerPanel.Name = "ghWorkerPanel";
+            this.ghWorkerPanel.Size = new System.Drawing.Size(882, 757);
+            this.ghWorkerPanel.TabIndex = 10;
             // 
             // label6
             // 
@@ -241,9 +241,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(884, 759);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.ghWorkerPanel);
+            this.Controls.Add(this.adminPanel);
+            this.Controls.Add(this.startPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimumSize = new System.Drawing.Size(900, 798);
@@ -251,21 +251,21 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Greenhouse";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.startPanel.ResumeLayout(false);
+            this.startPanel.PerformLayout();
+            this.adminPanel.ResumeLayout(false);
+            this.adminPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.ghWorkerPanel.ResumeLayout(false);
+            this.ghWorkerPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel startPanel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
@@ -275,9 +275,9 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel adminPanel;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel ghWorkerPanel;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
     }
