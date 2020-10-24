@@ -8,3 +8,13 @@ E:\University\4 курс\пппі\Тепличне господарство\Gree
 E:\University\4 курс\пппі\Тепличне господарство\Greenhouse\Greenhouse\obj\Debug\Greenhouse.exe
 E:\University\4 курс\пппі\Тепличне господарство\Greenhouse\Greenhouse\obj\Debug\Greenhouse.pdb
 E:\University\4 курс\пппі\Тепличне господарство\Greenhouse\Greenhouse\obj\Debug\Greenhouse.main_form.resources
+E:\University\4 курс\пппі\Новая папка\Greenhouse\Greenhouse\bin\Debug\Greenhouse.exe.config
+E:\University\4 курс\пппі\Новая папка\Greenhouse\Greenhouse\bin\Debug\Greenhouse.exe
+E:\University\4 курс\пппі\Новая папка\Greenhouse\Greenhouse\bin\Debug\Greenhouse.pdb
+E:\University\4 курс\пппі\Новая папка\Greenhouse\Greenhouse\obj\Debug\Greenhouse.csprojAssemblyReference.cache
+E:\University\4 курс\пппі\Новая папка\Greenhouse\Greenhouse\obj\Debug\Greenhouse.main_form.resources
+E:\University\4 курс\пппі\Новая папка\Greenhouse\Greenhouse\obj\Debug\Greenhouse.Properties.Resources.resources
+E:\University\4 курс\пппі\Новая папка\Greenhouse\Greenhouse\obj\Debug\Greenhouse.csproj.GenerateResource.cache
+E:\University\4 курс\пппі\Новая папка\Greenhouse\Greenhouse\obj\Debug\Greenhouse.csproj.CoreCompileInputs.cache
+E:\University\4 курс\пппі\Новая папка\Greenhouse\Greenhouse\obj\Debug\Greenhouse.exe
+E:\University\4 курс\пппі\Новая папка\Greenhouse\Greenhouse\obj\Debug\Greenhouse.pdb

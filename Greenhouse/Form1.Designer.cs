@@ -29,25 +29,34 @@
         private void InitializeComponent()
         {
             this.startPanel = new System.Windows.Forms.Panel();
-            this.adminPanel = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.passwordTextBox = new System.Windows.Forms.TextBox();
+            this.loginTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.adminPanel = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.ghWorkerPanel = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.adminMenuStrip = new System.Windows.Forms.MenuStrip();
+            this.працівникиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.новийПрацівникToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.списокПрацівниківToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.складToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.теплицяToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.adminExit = new System.Windows.Forms.Button();
             this.startPanel.SuspendLayout();
-            this.adminPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.adminPanel.SuspendLayout();
             this.ghWorkerPanel.SuspendLayout();
+            this.adminMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // startPanel
@@ -63,36 +72,13 @@
             this.startPanel.Controls.Add(this.label4);
             this.startPanel.Controls.Add(this.label3);
             this.startPanel.Controls.Add(this.label2);
-            this.startPanel.Controls.Add(this.textBox2);
-            this.startPanel.Controls.Add(this.textBox1);
+            this.startPanel.Controls.Add(this.passwordTextBox);
+            this.startPanel.Controls.Add(this.loginTextBox);
             this.startPanel.Controls.Add(this.label1);
             this.startPanel.Location = new System.Drawing.Point(120, 127);
             this.startPanel.Name = "startPanel";
             this.startPanel.Size = new System.Drawing.Size(882, 757);
             this.startPanel.TabIndex = 0;
-            // 
-            // adminPanel
-            // 
-            this.adminPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.adminPanel.BackColor = System.Drawing.Color.GreenYellow;
-            this.adminPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.adminPanel.Controls.Add(this.label5);
-            this.adminPanel.Location = new System.Drawing.Point(82, 99);
-            this.adminPanel.Name = "adminPanel";
-            this.adminPanel.Size = new System.Drawing.Size(882, 757);
-            this.adminPanel.TabIndex = 9;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(12, 9);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(119, 23);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Адміністратор";
             // 
             // button1
             // 
@@ -164,30 +150,30 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Логін";
             // 
-            // textBox2
+            // passwordTextBox
             // 
-            this.textBox2.BackColor = System.Drawing.Color.LightGreen;
-            this.textBox2.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2.Location = new System.Drawing.Point(310, 247);
-            this.textBox2.MaxLength = 16;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(183, 30);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox2.Click += new System.EventHandler(this.textBox2_Click);
+            this.passwordTextBox.BackColor = System.Drawing.Color.LightGreen;
+            this.passwordTextBox.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.passwordTextBox.Location = new System.Drawing.Point(310, 247);
+            this.passwordTextBox.MaxLength = 16;
+            this.passwordTextBox.Name = "passwordTextBox";
+            this.passwordTextBox.PasswordChar = '*';
+            this.passwordTextBox.Size = new System.Drawing.Size(183, 30);
+            this.passwordTextBox.TabIndex = 2;
+            this.passwordTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.passwordTextBox.Click += new System.EventHandler(this.textBox2_Click);
             // 
-            // textBox1
+            // loginTextBox
             // 
-            this.textBox1.BackColor = System.Drawing.Color.LightGreen;
-            this.textBox1.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(310, 183);
-            this.textBox1.MaxLength = 16;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(183, 30);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox1.Click += new System.EventHandler(this.textBox1_Click);
+            this.loginTextBox.BackColor = System.Drawing.Color.LightGreen;
+            this.loginTextBox.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.loginTextBox.Location = new System.Drawing.Point(310, 183);
+            this.loginTextBox.MaxLength = 16;
+            this.loginTextBox.Name = "loginTextBox";
+            this.loginTextBox.Size = new System.Drawing.Size(183, 30);
+            this.loginTextBox.TabIndex = 1;
+            this.loginTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.loginTextBox.Click += new System.EventHandler(this.textBox1_Click);
             // 
             // label1
             // 
@@ -199,6 +185,46 @@
             this.label1.Size = new System.Drawing.Size(59, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "Вхід";
+            // 
+            // adminPanel
+            // 
+            this.adminPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.adminPanel.BackColor = System.Drawing.Color.GreenYellow;
+            this.adminPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.adminPanel.Controls.Add(this.adminExit);
+            this.adminPanel.Controls.Add(this.label8);
+            this.adminPanel.Controls.Add(this.label9);
+            this.adminPanel.Controls.Add(this.adminMenuStrip);
+            this.adminPanel.Location = new System.Drawing.Point(21, 3);
+            this.adminPanel.Name = "adminPanel";
+            this.adminPanel.Size = new System.Drawing.Size(900, 798);
+            this.adminPanel.TabIndex = 9;
+            // 
+            // label8
+            // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label8.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.label8.Location = new System.Drawing.Point(132, 723);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(112, 23);
+            this.label8.TabIndex = 3;
+            this.label8.Text = "Ваня Гутьман";
+            // 
+            // label9
+            // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label9.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.label9.Location = new System.Drawing.Point(3, 723);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(123, 23);
+            this.label9.TabIndex = 2;
+            this.label9.Text = "Адміністратор:";
             // 
             // ghWorkerPanel
             // 
@@ -214,17 +240,6 @@
             this.ghWorkerPanel.Size = new System.Drawing.Size(882, 757);
             this.ghWorkerPanel.TabIndex = 10;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.label6.Location = new System.Drawing.Point(3, 727);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(139, 23);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Робітник теплиці:";
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -236,15 +251,90 @@
             this.label7.TabIndex = 1;
             this.label7.Text = "Ваня Гутьман";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.label6.Location = new System.Drawing.Point(3, 727);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(139, 23);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Робітник теплиці:";
+            // 
+            // adminMenuStrip
+            // 
+            this.adminMenuStrip.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.adminMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.теплицяToolStripMenuItem,
+            this.складToolStripMenuItem,
+            this.працівникиToolStripMenuItem});
+            this.adminMenuStrip.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
+            this.adminMenuStrip.Location = new System.Drawing.Point(0, 0);
+            this.adminMenuStrip.Name = "adminMenuStrip";
+            this.adminMenuStrip.Size = new System.Drawing.Size(900, 29);
+            this.adminMenuStrip.TabIndex = 4;
+            this.adminMenuStrip.Text = "adminMenuStrip";
+            // 
+            // працівникиToolStripMenuItem
+            // 
+            this.працівникиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.новийПрацівникToolStripMenuItem,
+            this.списокПрацівниківToolStripMenuItem});
+            this.працівникиToolStripMenuItem.Name = "працівникиToolStripMenuItem";
+            this.працівникиToolStripMenuItem.Size = new System.Drawing.Size(90, 25);
+            this.працівникиToolStripMenuItem.Text = "Працівники";
+            // 
+            // новийПрацівникToolStripMenuItem
+            // 
+            this.новийПрацівникToolStripMenuItem.Name = "новийПрацівникToolStripMenuItem";
+            this.новийПрацівникToolStripMenuItem.Size = new System.Drawing.Size(197, 26);
+            this.новийПрацівникToolStripMenuItem.Text = "Новий працівник";
+            // 
+            // списокПрацівниківToolStripMenuItem
+            // 
+            this.списокПрацівниківToolStripMenuItem.Name = "списокПрацівниківToolStripMenuItem";
+            this.списокПрацівниківToolStripMenuItem.Size = new System.Drawing.Size(197, 26);
+            this.списокПрацівниківToolStripMenuItem.Text = "Список працівників";
+            // 
+            // складToolStripMenuItem
+            // 
+            this.складToolStripMenuItem.Name = "складToolStripMenuItem";
+            this.складToolStripMenuItem.Size = new System.Drawing.Size(57, 25);
+            this.складToolStripMenuItem.Text = "Склад";
+            // 
+            // теплицяToolStripMenuItem
+            // 
+            this.теплицяToolStripMenuItem.Name = "теплицяToolStripMenuItem";
+            this.теплицяToolStripMenuItem.Size = new System.Drawing.Size(71, 25);
+            this.теплицяToolStripMenuItem.Text = "Теплиця";
+            // 
+            // adminExit
+            // 
+            this.adminExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.adminExit.AutoSize = true;
+            this.adminExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.adminExit.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.adminExit.Location = new System.Drawing.Point(697, 717);
+            this.adminExit.Name = "adminExit";
+            this.adminExit.Size = new System.Drawing.Size(154, 31);
+            this.adminExit.TabIndex = 5;
+            this.adminExit.Text = "Вийти з системи";
+            this.adminExit.UseVisualStyleBackColor = true;
+            this.adminExit.Click += new System.EventHandler(this.adminExit_Click);
+            this.adminExit.MouseEnter += new System.EventHandler(this.adminExit_MouseEnter);
+            this.adminExit.MouseLeave += new System.EventHandler(this.adminExit_MouseLeave);
+            // 
             // main_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(884, 759);
-            this.Controls.Add(this.ghWorkerPanel);
-            this.Controls.Add(this.adminPanel);
             this.Controls.Add(this.startPanel);
+            this.Controls.Add(this.adminPanel);
+            this.Controls.Add(this.ghWorkerPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MainMenuStrip = this.adminMenuStrip;
             this.MaximizeBox = false;
             this.MinimumSize = new System.Drawing.Size(900, 798);
             this.Name = "main_form";
@@ -253,12 +343,14 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.startPanel.ResumeLayout(false);
             this.startPanel.PerformLayout();
-            this.adminPanel.ResumeLayout(false);
-            this.adminPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.adminPanel.ResumeLayout(false);
+            this.adminPanel.PerformLayout();
             this.ghWorkerPanel.ResumeLayout(false);
             this.ghWorkerPanel.PerformLayout();
+            this.adminMenuStrip.ResumeLayout(false);
+            this.adminMenuStrip.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -267,8 +359,8 @@
 
         private System.Windows.Forms.Panel startPanel;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox passwordTextBox;
+        private System.Windows.Forms.TextBox loginTextBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
@@ -276,10 +368,18 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel adminPanel;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel ghWorkerPanel;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.MenuStrip adminMenuStrip;
+        private System.Windows.Forms.ToolStripMenuItem працівникиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem новийПрацівникToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem списокПрацівниківToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem теплицяToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem складToolStripMenuItem;
+        private System.Windows.Forms.Button adminExit;
     }
 }
 

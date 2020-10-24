@@ -40,18 +40,18 @@ namespace Greenhouse
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text.Length == 0 && textBox2.Text.Length == 0)
+            if (loginTextBox.Text.Length == 0 && passwordTextBox.Text.Length == 0)
             {
-                textBox1.BackColor = Color.Salmon;
-                textBox2.BackColor = Color.Salmon;
+                loginTextBox.BackColor = Color.Salmon;
+                passwordTextBox.BackColor = Color.Salmon;
             }
-            else if (textBox1.Text.Length == 0)
+            else if (loginTextBox.Text.Length == 0)
             {
-                textBox1.BackColor = Color.Salmon;
+                loginTextBox.BackColor = Color.Salmon;
             }
-            else if (textBox2.Text.Length == 0)
+            else if (passwordTextBox.Text.Length == 0)
             {
-                textBox2.BackColor = Color.Salmon;
+                passwordTextBox.BackColor = Color.Salmon;
             }
             else
             {
@@ -91,10 +91,10 @@ namespace Greenhouse
             int max = 10;
             int max2 = 12;
 
-            if (textBox1.Text == "v" && textBox2.Text == "1")
+            if (loginTextBox.Text == "v" && passwordTextBox.Text == "1")
             {
                 startPanel.Visible = false;
-                ghWorkerPanel.Visible = true;
+                adminPanel.Visible = true;
             }
             else
             {
@@ -103,15 +103,15 @@ namespace Greenhouse
                 {
                     if (count <= max)
                     {
-                        if (textBox1.BackColor == Color.Salmon)
+                        if (loginTextBox.BackColor == Color.Salmon)
                         {
-                            textBox1.BackColor = Color.LightGreen;
-                            textBox2.BackColor = Color.LightGreen;
+                            loginTextBox.BackColor = Color.LightGreen;
+                            passwordTextBox.BackColor = Color.LightGreen;
                         }
                         else
                         {
-                            textBox1.BackColor = Color.Salmon;
-                            textBox2.BackColor = Color.Salmon;
+                            loginTextBox.BackColor = Color.Salmon;
+                            passwordTextBox.BackColor = Color.Salmon;
                         }
                     }
                     count++;
@@ -133,12 +133,35 @@ namespace Greenhouse
 
         private void textBox1_Click(object sender, EventArgs e)
         {
-            textBox1.BackColor = Color.LightGreen;
+            loginTextBox.BackColor = Color.LightGreen;
         }
 
         private void textBox2_Click(object sender, EventArgs e)
         {
-            textBox2.BackColor = Color.LightGreen;
+            passwordTextBox.BackColor = Color.LightGreen;
+        }
+
+        private void adminExit_MouseEnter(object sender, EventArgs e)
+        {
+            adminExit.BackColor = Color.Red;
+            adminExit.ForeColor = Color.White;
+            adminExit.Location = new Point(adminExit.Location.X, adminExit.Location.Y - 5);
+        }
+
+        private void adminExit_MouseLeave(object sender, EventArgs e)
+        {
+            adminExit.BackColor = Color.GreenYellow;
+            adminExit.ForeColor = Color.Black;
+            adminExit.Location = new Point(adminExit.Location.X, adminExit.Location.Y + 5);
+        }
+
+        private void adminExit_Click(object sender, EventArgs e)
+        {
+            adminPanel.Visible = false;
+            startPanel.Visible = true;
+            loginTextBox.Text = "";
+            passwordTextBox.Text = "";
+            label4.Visible = false;
         }
     }
 }
