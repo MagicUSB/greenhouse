@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Greenhouse.classes;
 
 namespace Greenhouse
 {
@@ -15,6 +16,12 @@ namespace Greenhouse
         public Plants()
         {
             InitializeComponent();
+            //Plant[] plants = new Plant();
+        }
+
+        private void Plants_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

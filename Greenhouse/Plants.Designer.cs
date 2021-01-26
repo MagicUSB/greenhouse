@@ -288,6 +288,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "Plants";
             this.Text = "plants";
+            this.Load += new System.EventHandler(this.Plants_Load);
             this.panel1.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
