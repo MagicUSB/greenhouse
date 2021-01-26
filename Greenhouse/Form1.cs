@@ -163,5 +163,11 @@ namespace Greenhouse
             passwordTextBox.Text = "";
             label4.Visible = false;
         }
+
+        private void додатиРослинуToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Plants plants = new Plants();
+            plants.Show();
+        }
     }
 }

@@ -18,3 +18,4 @@ E:\University\4 курс\пппі\Новая папка\Greenhouse\Greenhouse\ob
 E:\University\4 курс\пппі\Новая папка\Greenhouse\Greenhouse\obj\Debug\Greenhouse.csproj.CoreCompileInputs.cache
 E:\University\4 курс\пппі\Новая папка\Greenhouse\Greenhouse\obj\Debug\Greenhouse.exe
 E:\University\4 курс\пппі\Новая папка\Greenhouse\Greenhouse\obj\Debug\Greenhouse.pdb
+E:\University\4 курс\пппі\Новая папка\Greenhouse\Greenhouse\obj\Debug\Greenhouse.Plants.resources

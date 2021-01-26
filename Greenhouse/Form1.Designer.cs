@@ -39,24 +39,25 @@
             this.loginTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.adminPanel = new System.Windows.Forms.Panel();
+            this.adminExit = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.ghWorkerPanel = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.adminMenuStrip = new System.Windows.Forms.MenuStrip();
+            this.теплицяToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.складToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.працівникиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.новийПрацівникToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.списокПрацівниківToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.складToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.теплицяToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.adminExit = new System.Windows.Forms.Button();
+            this.ghWorkerPanel = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.додатиРослинуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.startPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.adminPanel.SuspendLayout();
-            this.ghWorkerPanel.SuspendLayout();
             this.adminMenuStrip.SuspendLayout();
+            this.ghWorkerPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // startPanel
@@ -202,6 +203,22 @@
             this.adminPanel.Size = new System.Drawing.Size(900, 798);
             this.adminPanel.TabIndex = 9;
             // 
+            // adminExit
+            // 
+            this.adminExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.adminExit.AutoSize = true;
+            this.adminExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.adminExit.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.adminExit.Location = new System.Drawing.Point(697, 717);
+            this.adminExit.Name = "adminExit";
+            this.adminExit.Size = new System.Drawing.Size(154, 31);
+            this.adminExit.TabIndex = 5;
+            this.adminExit.Text = "Вийти з системи";
+            this.adminExit.UseVisualStyleBackColor = true;
+            this.adminExit.Click += new System.EventHandler(this.adminExit_Click);
+            this.adminExit.MouseEnter += new System.EventHandler(this.adminExit_MouseEnter);
+            this.adminExit.MouseLeave += new System.EventHandler(this.adminExit_MouseLeave);
+            // 
             // label8
             // 
             this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -225,6 +242,55 @@
             this.label9.Size = new System.Drawing.Size(123, 23);
             this.label9.TabIndex = 2;
             this.label9.Text = "Адміністратор:";
+            // 
+            // adminMenuStrip
+            // 
+            this.adminMenuStrip.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.adminMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.теплицяToolStripMenuItem,
+            this.складToolStripMenuItem,
+            this.працівникиToolStripMenuItem});
+            this.adminMenuStrip.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
+            this.adminMenuStrip.Location = new System.Drawing.Point(0, 0);
+            this.adminMenuStrip.Name = "adminMenuStrip";
+            this.adminMenuStrip.Size = new System.Drawing.Size(900, 29);
+            this.adminMenuStrip.TabIndex = 4;
+            this.adminMenuStrip.Text = "adminMenuStrip";
+            // 
+            // теплицяToolStripMenuItem
+            // 
+            this.теплицяToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.додатиРослинуToolStripMenuItem});
+            this.теплицяToolStripMenuItem.Name = "теплицяToolStripMenuItem";
+            this.теплицяToolStripMenuItem.Size = new System.Drawing.Size(71, 25);
+            this.теплицяToolStripMenuItem.Text = "Теплиця";
+            // 
+            // складToolStripMenuItem
+            // 
+            this.складToolStripMenuItem.Name = "складToolStripMenuItem";
+            this.складToolStripMenuItem.Size = new System.Drawing.Size(57, 25);
+            this.складToolStripMenuItem.Text = "Склад";
+            // 
+            // працівникиToolStripMenuItem
+            // 
+            this.працівникиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.новийПрацівникToolStripMenuItem,
+            this.списокПрацівниківToolStripMenuItem});
+            this.працівникиToolStripMenuItem.Name = "працівникиToolStripMenuItem";
+            this.працівникиToolStripMenuItem.Size = new System.Drawing.Size(90, 25);
+            this.працівникиToolStripMenuItem.Text = "Працівники";
+            // 
+            // новийПрацівникToolStripMenuItem
+            // 
+            this.новийПрацівникToolStripMenuItem.Name = "новийПрацівникToolStripMenuItem";
+            this.новийПрацівникToolStripMenuItem.Size = new System.Drawing.Size(197, 26);
+            this.новийПрацівникToolStripMenuItem.Text = "Новий працівник";
+            // 
+            // списокПрацівниківToolStripMenuItem
+            // 
+            this.списокПрацівниківToolStripMenuItem.Name = "списокПрацівниківToolStripMenuItem";
+            this.списокПрацівниківToolStripMenuItem.Size = new System.Drawing.Size(197, 26);
+            this.списокПрацівниківToolStripMenuItem.Text = "Список працівників";
             // 
             // ghWorkerPanel
             // 
@@ -262,68 +328,12 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "Робітник теплиці:";
             // 
-            // adminMenuStrip
+            // додатиРослинуToolStripMenuItem
             // 
-            this.adminMenuStrip.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.adminMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.теплицяToolStripMenuItem,
-            this.складToolStripMenuItem,
-            this.працівникиToolStripMenuItem});
-            this.adminMenuStrip.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
-            this.adminMenuStrip.Location = new System.Drawing.Point(0, 0);
-            this.adminMenuStrip.Name = "adminMenuStrip";
-            this.adminMenuStrip.Size = new System.Drawing.Size(900, 29);
-            this.adminMenuStrip.TabIndex = 4;
-            this.adminMenuStrip.Text = "adminMenuStrip";
-            // 
-            // працівникиToolStripMenuItem
-            // 
-            this.працівникиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.новийПрацівникToolStripMenuItem,
-            this.списокПрацівниківToolStripMenuItem});
-            this.працівникиToolStripMenuItem.Name = "працівникиToolStripMenuItem";
-            this.працівникиToolStripMenuItem.Size = new System.Drawing.Size(90, 25);
-            this.працівникиToolStripMenuItem.Text = "Працівники";
-            // 
-            // новийПрацівникToolStripMenuItem
-            // 
-            this.новийПрацівникToolStripMenuItem.Name = "новийПрацівникToolStripMenuItem";
-            this.новийПрацівникToolStripMenuItem.Size = new System.Drawing.Size(197, 26);
-            this.новийПрацівникToolStripMenuItem.Text = "Новий працівник";
-            // 
-            // списокПрацівниківToolStripMenuItem
-            // 
-            this.списокПрацівниківToolStripMenuItem.Name = "списокПрацівниківToolStripMenuItem";
-            this.списокПрацівниківToolStripMenuItem.Size = new System.Drawing.Size(197, 26);
-            this.списокПрацівниківToolStripMenuItem.Text = "Список працівників";
-            // 
-            // складToolStripMenuItem
-            // 
-            this.складToolStripMenuItem.Name = "складToolStripMenuItem";
-            this.складToolStripMenuItem.Size = new System.Drawing.Size(57, 25);
-            this.складToolStripMenuItem.Text = "Склад";
-            // 
-            // теплицяToolStripMenuItem
-            // 
-            this.теплицяToolStripMenuItem.Name = "теплицяToolStripMenuItem";
-            this.теплицяToolStripMenuItem.Size = new System.Drawing.Size(71, 25);
-            this.теплицяToolStripMenuItem.Text = "Теплиця";
-            // 
-            // adminExit
-            // 
-            this.adminExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.adminExit.AutoSize = true;
-            this.adminExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.adminExit.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.adminExit.Location = new System.Drawing.Point(697, 717);
-            this.adminExit.Name = "adminExit";
-            this.adminExit.Size = new System.Drawing.Size(154, 31);
-            this.adminExit.TabIndex = 5;
-            this.adminExit.Text = "Вийти з системи";
-            this.adminExit.UseVisualStyleBackColor = true;
-            this.adminExit.Click += new System.EventHandler(this.adminExit_Click);
-            this.adminExit.MouseEnter += new System.EventHandler(this.adminExit_MouseEnter);
-            this.adminExit.MouseLeave += new System.EventHandler(this.adminExit_MouseLeave);
+            this.додатиРослинуToolStripMenuItem.Name = "додатиРослинуToolStripMenuItem";
+            this.додатиРослинуToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
+            this.додатиРослинуToolStripMenuItem.Text = "Додати рослину";
+            this.додатиРослинуToolStripMenuItem.Click += new System.EventHandler(this.додатиРослинуToolStripMenuItem_Click);
             // 
             // main_form
             // 
@@ -347,10 +357,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.adminPanel.ResumeLayout(false);
             this.adminPanel.PerformLayout();
-            this.ghWorkerPanel.ResumeLayout(false);
-            this.ghWorkerPanel.PerformLayout();
             this.adminMenuStrip.ResumeLayout(false);
             this.adminMenuStrip.PerformLayout();
+            this.ghWorkerPanel.ResumeLayout(false);
+            this.ghWorkerPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -380,6 +390,7 @@
         private System.Windows.Forms.ToolStripMenuItem теплицяToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem складToolStripMenuItem;
         private System.Windows.Forms.Button adminExit;
+        private System.Windows.Forms.ToolStripMenuItem додатиРослинуToolStripMenuItem;
     }
 }
 
